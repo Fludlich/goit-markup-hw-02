@@ -166,6 +166,7 @@ background-color: var(--accent-color);
     line-height: 1.87;
     letter-spacing: 0.03em;
 }
+/*reactions of contacts*/
 .contacts:hover,
 .contacts:focus{
 color: var(--accent-color);
