@@ -3,6 +3,10 @@
 ul{
     list-style-type:none;
 }
+/*no text decor*/
+a{
+    text-decoration: none;
+}
 /*colors*/
 :root{
    --primary-text-color: #757575;
@@ -12,7 +16,6 @@ ul{
    --primary-white-color:#ffffff;
 
 }
-
 /*body*/
 body{
     background-color: var(--primary-white-color);
@@ -24,16 +27,6 @@ body{
     line-height: 2;
     letter-spacing: 0.03;
 }
-/*title*/
-h2,
-h3,
-h4,
-h5,
-h6{
-    color: var(--tytle-text-color);
-
-}
-
 /*logo and header*/
 .logo{
     color: var(--accent-color);
@@ -41,7 +34,7 @@ h6{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    
 }
 .logo-scdw{
     color: var(--tytle-text-color);
@@ -49,7 +42,14 @@ h6{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    
+}
+.logo-scdw-foot{
+    color: var(--primary-white-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 .links-nav{
     color: var(--tytle-text-color);
@@ -58,6 +58,21 @@ h6{
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
+.links-nav:hover,
+.links-nav:focus{
+color: var(--accent-color);
+}
+/*.links-nav:active{
+    color: var(--accent-color);
+    transition: 2s;}*/
+/*.links-nav:primary{
+    color: var(--tytle-text-color);
+}
+.links-nav:secondary{
+    color: var(--accent-color);
+}*/
+
 .contacts{
     color: var(--primary-text-color);
 
@@ -85,15 +100,14 @@ h6{
 }
 
 .button:hover,
-.buttons:hover,
-.links-nav:hover{
+.buttons:hover{
 color: var(--primary-white-color);
 background-color: var(--accent-color);
 
+
 }
 .button:focus,
-.buttons:focus,
-.links-nav:focus
+.buttons:focus
 {
 color: var(--primary-white-color);
 background-color: var(--accent-color);
@@ -102,6 +116,7 @@ background-color: var(--accent-color);
 
 /*Hero*/
 .hero{
+    background-color: #212121;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -115,19 +130,21 @@ background-color: var(--accent-color);
     display: none;
 }
 .about-us{
+    color: var(--tytle-text-color);
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 /*2 section*/
 .our-work, .our-team{
+    color: var(--tytle-text-color);
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 /*3 section*/
 /*.our-team{
@@ -139,21 +156,22 @@ background-color: var(--accent-color);
     letter-spacing: 0.03em;
 }*/
 .per-name{
+    color: var(--tytle-text-color);
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 .about-per{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 /*portfolio*/
 .our-projects{
+    color: var(--tytle-text-color);
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -161,7 +179,7 @@ background-color: var(--accent-color);
 
 }
 .descr-proj{
-    font-weight: 400;
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -170,4 +188,15 @@ background-color: var(--accent-color);
 .contacts:hover,
 .contacts:focus{
 color: var(--accent-color);
+}
+/*footer*/
+.foot{
+    background-color:#2F303A;
+}
+.link-location{
+    color: var(--primary-white-color);
+
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 2;
 }
