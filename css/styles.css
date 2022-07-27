@@ -63,19 +63,18 @@ body{
 .links-nav:focus{
 color: var(--accent-color);
 }
-/*.links-nav:active{
+.links-nav:active{
     color: var(--accent-color);
-    transition: 2s;}*/
-/*.links-nav:primary{
-    color: var(--tytle-text-color);
-}
-.links-nav:secondary{
-    color: var(--accent-color);
-}*/
 
+}
+
+.current-nav{
+    color: var(--accent-color);
+}
 .contacts{
     color: var(--primary-text-color);
 
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -197,6 +196,11 @@ color: var(--accent-color);
     color: var(--primary-white-color);
 
     font-family: 'Roboto';
+    font-style: normal;
     font-size: 14px;
     line-height: 2;
+}
+.contacts-footer{
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
 }
